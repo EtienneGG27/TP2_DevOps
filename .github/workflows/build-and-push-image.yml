@@ -27,7 +27,7 @@ jobs:
           context: ./simple-api
           # Note: tags has to be all lower-case
           tags: ${{secrets.DOCKER_ID}}/tp-devops-simple-api:latest
-          # build on feature branches, push only on main branch
+          # build on feature branches, push only on main branchs
           push: ${{ github.ref == 'refs/heads/main' }}
 
       - name: Build image and push database
